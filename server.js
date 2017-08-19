@@ -43,6 +43,12 @@ var articles ={
 }
 };
 
+var counter = 0;
+app.get('/counter',function(req,res){
+    counter = counter + 1;
+    res.send(counter,toString());
+});
+
 function createTemplate(data){
     var date = data.date;
     var title = data.title;
