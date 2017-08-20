@@ -1,8 +1,6 @@
 //Counter code
 var button = document.getElementById('counter');
 
-var cnt=0;
-
 button.onclick = function() {
     //create a new request
     var request = new XMLHttpRequest();
@@ -15,11 +13,10 @@ button.onclick = function() {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
-                cnt = counter.toString();
             }
         }
     };
     //Make the request
     request.open('GET','http://ayushbsp98.imad.hasura-app.io/counter',true);
-    request.send(cnt);
+    request.send(null);
 };
