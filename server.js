@@ -76,8 +76,8 @@ return htmlTemplate;
 }
 
 var names=[];
-app.get('/submit-name/:name',function(req,res){
-    var names = req.params.name;
+app.get('/submit-name',function(req,res){
+    var names = req.querry.name;
     names.push(name);
     //JavaScript Object notation
     res.send(JSON.stringify(names));
