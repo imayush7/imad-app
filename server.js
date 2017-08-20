@@ -75,13 +75,13 @@ var htmlTemplate = `
 return htmlTemplate;
 }
 
-var names=[];
+/*var names=[];
 app.get('/submit-name/:name',function(req,res)){
     var names = req.params.name;
     names.push(name);
     //JavaScript Object notation
     res.send(JSON.stringify(names));
-});
+});*/
 
 var counter = 0;
 app.get('/counter',function(req,res){
