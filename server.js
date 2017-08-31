@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool = require('pg').Pool;
+var pool = require('pg').pool;
 
 var config = {
     user : 'ayushbsp98',
@@ -63,7 +63,7 @@ app.get('/test-db',function(req,res){
         else{
             res.send(JSON.stringify(result));
         }
-    })
+    });
 });
 
 function createTemplate(data){
