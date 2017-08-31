@@ -43,6 +43,11 @@ var articles ={
 }
 };
 
+app.get('/test-db',function(req,res){
+    //make a select request
+    //return a response
+});
+
 function createTemplate(data){
     var date = data.date;
     var title = data.title;
