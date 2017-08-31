@@ -4,12 +4,12 @@ var path = require('path');
 var pool = require('pg').pool;
 
 var config = {
-    user = 'ayushbsp98',
-    db = 'ayushbsp98',
-    host = 'db.imad.hasura-app.io',
-    port = '5432',
-    password = 'process.env.DB_PASSWORD';
-}
+    user : 'ayushbsp98',
+    db : 'ayushbsp98',
+    host : 'db.imad.hasura-app.io',
+    port : '5432',
+    password : process.env.DB_PASSWORD
+};
 
 var app = express();
 app.use(morgan('combined'));
