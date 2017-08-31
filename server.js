@@ -52,7 +52,7 @@ var articles ={
 }
 };
 
-var pool = new pool(config);
+var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
     //return a response
