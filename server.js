@@ -13,44 +13,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-/*
-var articles ={
-    'article-one': {
-  title: 'Article One | Ayush Singh',
-  heading: 'Article One',
-  date: 'Aug 16 , 2017',
-  content:`
-        <p>
-            This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>
-        <p>
-            This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>
-        <p>
-            This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>`
-},
-    'article-two': {
-    title: 'Article Two | Ayush Singh',
-  heading: 'Article Two',
-  date: 'Aug 16 , 2017',
-  content:`
-        
-        <p>
-            This is the content for my second article.
-        </p>`
-},
-    'article-three': {
-      title: 'Article Three | Ayush Singh',
-  heading: 'Article three',
-  date: 'Aug 16 , 2017',
-  content:`
-        
-        <p>
-            This is the content for my Third article.
-        </p>`
-}
-};*/
+
 
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
